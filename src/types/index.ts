@@ -1,8 +1,7 @@
 export interface ConfigServer {
     root: string
-    port?: number
-    proxy?: string
-    location?: string
+    port: number
+    fileExtensions?: boolean
 }
 
 export type Config = ConfigServer[] 
