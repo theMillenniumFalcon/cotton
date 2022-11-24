@@ -6,6 +6,6 @@ const CONFIG_PATH = "./config/index.json";
 
 const config: Config = JSON.parse(readFileSync(CONFIG_PATH, "utf-8"))
 
-config.forEach((server) => {
-    new Server(server)
+config.forEach((server, idx) => {
+    new Server(server, idx + 1)
 })
