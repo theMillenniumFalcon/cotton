@@ -158,7 +158,7 @@ export default class Server {
 
     // Formats the headers of `res`
     private formatResponse(res: Response) {
-        res.set("Server", "Silk")
+        res.set("Server", "Cotton")
 
         for (const headerKey in this.config.headers) {
             const headerVal = this.config.headers[headerKey]
